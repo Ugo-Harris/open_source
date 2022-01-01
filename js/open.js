@@ -30,7 +30,7 @@ function updateInputs() {
     const password1Value = password1.value.trim()
     const password2Value = password2.value.trim()
     const homeaddressValue = homeaddress.value.trim()
-    const phoneNumberValue = phonenumber.value.trim()
+    const phonenumberValue = phonenumber.value.trim()
     const occupationValue = occupation.value.trim()
 
     if (firstnameValue === ""){
@@ -40,13 +40,13 @@ function updateInputs() {
         fn= true;
     }
     if (lastnameValue === ""){
-        onError(lastname, 'Please fill your lastname')
+        onError(lastname, 'Please fill your username')
     } else{
         onSuccess(lastname);
         ln = true;
     }
     if (usernameValue === ""){
-        onError(username, 'Please fill your lastname')
+        onError(username, 'Please fill your username')
     } else{
         onSuccess(username);
         un = true;
@@ -66,9 +66,23 @@ if (password1Value === "") {
         onSuccess(password2);
         pw2 = true;
     }
-
-
+if (homeaddressValue === "") {
+        onError(homeaddress, 'Please fill your address')
+    } else {
+        onSuccess(homeaddress)
+        ha = true;
+    }
+if (phonenumberValue === "") {
+        onError(phonenumber, 'Please fill your phone number')
+    } else {
+        onSuccess(phonenumber)
+        ph = true;
 }
+if (occupation === "") {
+        onError(occupation, 'Please fill your address')
+    } else {
+        onSuccess(occupation)
+        occu = true;
 
 
 
