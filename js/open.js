@@ -83,6 +83,8 @@ if (occupation === "") {
     } else {
         onSuccess(occupation)
         occu = true;
+    }
+}
 
 
 
