@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/js/bootstrap.min.js">
+    <link rel="stylesheet" href="styles/open.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid mt-5" id ="wrapper">
+        <h1 class="container-fluid ">REGISTER AS A LAND OWNER</h1>
+        <form action="" class ="row g-2" id="form">
+            <div class="col-md-6 source">
+                <label for = "firstname" class="form-label">First Name</label>
+                <input type="text" id="firstname" class="form-control" >
+                <small id="small">Error Message</small>
+            </div>
+            <div class="col-md-6 source">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname">
+                <small>Error Message</small>
+            </div>
+            <div class="col-md-12 source">
+                <label for="username" class="form-label">UserName</label>
+                <input type="text" class="form-control" id="username">
+                <small>Error Message</small>
+            </div>
+            <div class="col-md-6 source">
+                <label for="password1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password1">
+                <small>Error Message</small>
+            </div>
+            <div class="col-md-6 source">
+                <label for="password2" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="password2">
+                <small>Error Message</small>
+            </div>
+                <div class="col-md-12 source">
+                <label for="address" class="form-label">Home Address</label>
+                <textarea name="address" id="address" cols="10" rows="2" class="form-control"></textarea>
+             <small>Error Message</small>
+            </div>
+            
+            <div class="col-md-6 source">
+                <label for="phonenumber" class="form-label">Phone Number </label>
+                <input type="tel" id="phone" class="form-control" placeholder="+234-705-332-4055" pattern="[+0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    maxlength="15">
+                    <small>Error Message</small>
+            </div>
+            <div class="col-md-6 source">
+                <label for="occupation" class="form-label">Occupation</label>
+                <input type="text" class="form-control" id="occupation">
+                <small>Error Message</small>
+            </div>
+                        <div class="col-md-12 source" id="gender-div">
+                <label for="gender" class="form-label">Gender</label>
+                <fieldset>
+                    <label class="radio-inline">
+                        <input class="bell" type="radio" name="optradio" checked>Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" class="bell">Female
+                    </label>
+                </fieldset>
+            </div>
+            <div class="col-md-12 source" id="button">
+                <button type="submit" class="btn btn-primary">REGISTER</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/open.js"></script>
+</body>
+</html>

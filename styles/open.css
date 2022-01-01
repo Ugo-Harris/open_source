@@ -1,0 +1,64 @@
+
+body{
+    background-image: url(../images/earth.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Open Sans" sans-serif; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+}
+#wrapper{
+        /* background-image: url(../images/div_image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: rgb(42, 42, 158);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 4px rgba(0,0,0,0.3);
+        width: 750px;
+    
+        
+}
+h1{
+text-align: center;
+}
+.form-label{
+    color: cornsilk;
+}
+.radio-inline{
+    margin-left: 30px;
+     color: cornsilk;
+}
+.bell{
+    margin-right: 20px;
+    
+}
+#gender-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button{
+    background-color:rgb(42, 42, 158);
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.source small{
+    visibility: hidden; 
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0px;  
+    margin-top:5px;
+}
+.source.success input{
+    border: 2px solid rgb(6, 175, 6);
+}
+.source.error input{
+    border: 2px solid rgb(219, 13, 13);
+}
